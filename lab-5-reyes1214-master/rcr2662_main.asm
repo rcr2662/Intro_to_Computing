@@ -1,0 +1,29 @@
+.ORIG x3000
+
+; Enable the Interrupt
+	LD R2 BIT14
+	STI R2 KBSR
+
+; Set-up stack pointer
+	LD R6 STACK_PTR
+
+; Initialize Interrupt Vector Table
+
+	STI R2 KBINTV
+
+; DELAY LOGIC
+NEXT	LEA R0 TXE
+	PUTS
+	LD R1 DELAY
+AGAIN	ADD R1 R1 #-1
+	BRNP AGAIN
+	BR NEXT
+
+DELAY	   .FILL xA000
+KBSR 	   .FILL xFE00
+BIT14	   .FILL x4000
+STACK_PTR  .FILL x5000
+KBINTV     .FILL x0180
+TXE 	   .STRINGZ "TEXAS ENGINEERING\n"
+
+.END

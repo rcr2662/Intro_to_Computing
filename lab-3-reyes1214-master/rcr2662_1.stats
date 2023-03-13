@@ -1,0 +1,185 @@
+EE 306 FALL 19 PROGRAMMING ASSIGNMENT 3, TEST REPORT
+Title not printed Correctly: UT Resource Map
+POINTS ACCUMULATED: 0
+********* TEST 1 ************
+*** INPUT to CLI: Enter a command: list **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+Counseling and Mental Health Center - B3
+EER - C5
+Gender/Sexuality Center - E4
+Littlefield Cafe - B2
+Perry-Castaneda Library - F3
+Mind/Body Lab 1 - B3
+Engineering Career Assistance Center (ECAC) - C5
+Recreation Center/Recsports - G6
+Vick Center for Strategic Advising & Career Counseling - F4
+Engineering Dean's Office - B5
+Accommodations for Students with Disabilities - B3
+Office of Undergraduate Research - D2
+University Health Services - B3
+Texas InventionWorks - C5
+Office for Inclusion and Equity - B3
+ ----- EXPECTED OUTPUT:
+Counseling and Mental Health Center - B3
+EER - C5
+Gender/Sexuality Center - E4
+Littlefield Cafe - B2
+Perry-Castaneda Library - F3
+Mind/Body Lab 1 - B3
+Engineering Career Assistance Center (ECAC) - C5
+Recreation Center/Recsports - G6
+Vick Center for Strategic Advising & Career Counseling - F4
+Engineering Dean's Office - B5
+Accommodations for Students with Disabilities - B3
+Office of Undergraduate Research - D2
+University Health Services - B3
+Texas InventionWorks - C5
+Office for Inclusion and Equity - B3
+***** POINTS ACCUMULATED: 30 *******
+*** INPUT to CLI: Enter a command: delt **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+Error: Invalid command!
+ ----- EXPECTED OUTPUT:
+Error:  Invalid command!
+***** POINTS ACCUMULATED: 35 *******
+*** INPUT to CLI: Enter a command: find B3 **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+Counseling and Mental Health Center
+ ----- EXPECTED OUTPUT:
+Counseling and Mental Health Center
+Mind/Body Lab 1
+Accommodations for Students with Disabilities
+University Health Services
+Office for Inclusion and Equity
+ ------- COMMAND FAILED!! ---------
+***** POINTS ACCUMULATED: 35 *******
+*** INPUT to CLI: Enter a command: find "Gender/Sexuality Center" **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+E4
+ ----- EXPECTED OUTPUT:
+E4
+***** POINTS ACCUMULATED: 40 *******
+*** INPUT to CLI: Enter a command: find F4 **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+Vick Center for Strategic Advising & Career Counseling
+ ----- EXPECTED OUTPUT:
+Vick Center for Strategic Advising & Career Counseling
+***** POINTS ACCUMULATED: 45 *******
+*** INPUT to CLI: Enter a command: find "eer" **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+Error: This location doesn't exist!
+ ----- EXPECTED OUTPUT:
+Error:  This resource doesn't exist!
+***** POINTS ACCUMULATED: 50 *******
+*** INPUT to CLI: Enter a command: find H7 **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+ ----- EXPECTED OUTPUT:
+***** POINTS ACCUMULATED: 55 *******
+*** INPUT to CLI: Enter a command: findl **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+Error: Invalid command!
+ ----- EXPECTED OUTPUT:
+Error:  Invalid command!
+***** POINTS ACCUMULATED: 60 *******
+*** INPUT to CLI: Enter a command: find "Office of Undergraduate Research" **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+D2
+ ----- EXPECTED OUTPUT:
+D2
+***** POINTS ACCUMULATED: 65 *******
+*** INPUT to CLI: Enter a command: exit **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+--- halting the LC-3 ---
+ ----- EXPECTED OUTPUT:
+--- halting the LC-3 ---
+***** POINTS ACCUMULATED: 70 *******
+********* TEST 2 ************
+*** INPUT to CLI: Enter a command: list **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+ ----- EXPECTED OUTPUT:
+***** POINTS ACCUMULATED: 75 *******
+
+*** INPUT to CLI: Enter a command: find C5 **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+ ----- EXPECTED OUTPUT:
+***** POINTS ACCUMULATED: 80 *******
+
+*** INPUT to CLI: Enter a command: find "EER" **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+Error: This location doesn't exist!
+ ----- EXPECTED OUTPUT:
+Error:  This resource doesn't exist!
+***** POINTS ACCUMULATED: 85 *******
+
+*** INPUT to CLI: Enter a command: exit **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+--- halting the LC-3 ---
+ ----- EXPECTED OUTPUT:
+--- halting the LC-3 ---
+***** POINTS ACCUMULATED: 90 *******
+
+**** TEST FOR EXTRA CREDIT ******
+*** INPUT to CLI: Enter a command: add "Accomodations for Students with Disabilities" B3 **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+Counseling and Mental Health Center - B3
+EER - C5
+Gender/Sexuality Center - E4
+Littlefield Cafe - B2
+Perry-Castaneda Library - F3
+ ----- EXPECTED OUTPUT:
+Accomodations for Students with Disabilities - B3
+Counseling and Mental Health Center - B3
+EER - C5
+Gender/Sexuality Center - E4
+Littlefield Cafe - B2
+Perry-Castaneda Library - F3
+ ------- COMMAND FAILED!! ---------
+***** POINTS ACCUMULATED: 90 *******
+*** INPUT to CLI: Enter a command: add "Public Speaking Center" F3 **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+ ----- EXPECTED OUTPUT:
+Accomodations for Students with Disabilities - B3
+Counseling and Mental Health Center - B3
+EER - C5
+Gender/Sexuality Center - E4
+Littlefield Cafe - B2
+Perry-Castaneda Library - F3
+Public Speaking Center - F3
+ ------- COMMAND FAILED!! ---------
+***** POINTS ACCUMULATED: 90 *******
+*** INPUT to CLI: Enter a command: add "EER" H7 **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+ ----- EXPECTED OUTPUT:
+Error: This resource already exists!
+ ------- COMMAND FAILED!! ---------
+***** POINTS ACCUMULATED: 90 *******
+*** INPUT to CLI: Enter a command: del "Texas Exes Building" **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••˜™ššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššà"ð%ð
+Welcome to the LC-3 simulator.
+The contents of the LC-3 tools distribution, including sources, management
+tools, and data, are Copyright (c) 2003 Steven S. Lumetta.
+The LC-3 tools distribution is free software covered by the GNU General
+Public License, and you are welcome to modify it and/or distribute copies
+of it under certain conditions.  The file COPYING (distributed with the
+tools) specifies those conditions.  There is absolutely no warranty for
+the LC-3 tools distribution, as described in the file NO_WARRANTY (also
+distributed with the tools).
+Have fun.
+ ----- EXPECTED OUTPUT:
+Error:  This resource doesn't exist!
+ ------- COMMAND FAILED!! ---------
+***** POINTS ACCUMULATED: 90 *******
+*** INPUT to CLI: Enter a command: del "Perry-Castaneda Library" **********
+ ---- ACTUAL OUTPUT FROM YOUR CODE:
+Counseling and Mental Health Center - B3
+EER - C5
+Gender/Sexuality Center - E4
+Littlefield Cafe - B2
+ ----- EXPECTED OUTPUT:
+Counseling and Mental Health Center - B3
+EER - C5
+Gender/Sexuality Center - E4
+Littlefield Cafe - B2
+***** POINTS ACCUMULATED: 92.5 *******
+TOTAL POINTS FOR PROGRAMMING ASSIGNMENT 3 : 92.5/100
